@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forms Demo</title>
+
+
+<body>
+    <h1>FORMS DEMO</h1> 
+    
+    Search<input type="search">
+        <!--usign html entity to create a search button--> 
+        <button>&#128269;</button>
+
+    <!--will draw a horizontal line across the whole page-->
+    <hr>
+
+  <!--where the form is sent-->
+    <form action="/tacos">
+        <!--labels used to specify the type of form element -->
+        <label for="username">Enter a username :</label>
+        <!--/input : used to accept data from the user/
+            /id : used to uniquely identify an element/
+            /type : specifies the type of <input> element to display/
+            /name : sends data to the server by the defined name/-->
+        <input id="username" type="text" placeholder="username" name="username" required><br><br>
+        
+        <label for="password">Enter Password :</label>
+        <input id="password" type="password" placeholder="enter password" name="password" required>
+        <!--&#128065;(eye)--><br><br>
+
+        <label for="color">Choose a color</label>
+        <input id="color" type="color" name="color"><br><br>
+        <!----<input type="number" placeholder="enter number">-->
+        <label for="number">enter a number</label>
+        <input id="number" type="number" placeholder="enter a number" name="color">
+
+        <p><label for="coding">Do you like coding?</label>
+            <input id="coding" type="checkbox">
+        </p>
+
+        <p>Your Html skills as of now<input type="range"></p>
+        <p>
+           
+            <input type="checkbox" name="tos" id="agree">
+            <label for="agree">I agree to tos</label>
+            </p> 
+        <!--this will not submit the form-->
+       <!-- <button type="button">will not submit</button><br>-->
+        <!--another way of adding submit buttons-->
+        <input type="submit">
+        <!--but to change the text displayed on a button defined above follow the syntax below-->
+        <input type="submit" value="CLICK HERE TO SUBMIT"></button>
+    </form>
+    <hr>
+    <!--buttons displayed outside a form shows no default behaviour-->
+    <!--<button>submit</button><br>-->
+    <br>
+    <!--wiil redirect your search to google-->
+    <form action="https://www.google.com/search?q">
+        <input type="text" name="q">
+        <button>Search Google</button><br><br>
+    </form>
+    <form action="https://www.youtube.com/results?search_query">
+        <input type="text" name="search_query">
+        <button>Search Youtube</button>
+    </form>
+       <p><form action="/tacos">
+            <label for="reviews">TELL US WHAT YOU THINK</label><br>
+
+            <textarea id="review" name="review" rows=10 cols=40 placeholder="type something here"></textarea>
+            <button>submit</button>
+        </form>
+    </p>
+
+</body>
+</head>
+
+</html>
